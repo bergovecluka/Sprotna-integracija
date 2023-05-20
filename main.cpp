@@ -61,11 +61,11 @@ int main() {
     p.push_back(10);
 
     int k = calculate_largest_k(p);
-    std::cout << "Piva: " << std::endl; 
+    std::cout << "Piva: "; 
     for(int ai : p){
-	std::cout<< ai << ", ";
+	std::cout << ai << " ,";
     }
-    std::cout << "lahko zapakiramo v škatle velikosti " << k << "." << std::endl;
+    std::cout << std::endl << "Najvecja velikost skatel, v katere jih lahko zapakiramo: " << k << ".";
 
     return 0;
 }
