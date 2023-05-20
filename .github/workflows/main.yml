@@ -27,3 +27,14 @@ jobs:
 
   Windows:
     runs-on: self-hosted
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v3
+      - shell: bash
+        run: |
+          expr 3 + 8 > math-homework2.txt
+      - name: Upload result for job 2
+        uses: actions/upload-artifact@v3
+        with:
+          name: homework2
+          path: math-homework2.txt
