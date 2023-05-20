@@ -47,6 +47,7 @@ int calculate_largest_k(const std::vector<int> &p) {
             return j;
         }
     }
+    return 2;
 }
 
 int main() {
