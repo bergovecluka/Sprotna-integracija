@@ -1,3 +1,0 @@
-/mnt/c/Users/lukab/Documents/fax/s6/PRO/Sprotna-integracija/CMakeFiles/v4.dir
-/mnt/c/Users/lukab/Documents/fax/s6/PRO/Sprotna-integracija/CMakeFiles/edit_cache.dir
-/mnt/c/Users/lukab/Documents/fax/s6/PRO/Sprotna-integracija/CMakeFiles/rebuild_cache.dir
