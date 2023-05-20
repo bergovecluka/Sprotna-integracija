@@ -20,10 +20,9 @@ jobs:
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
       
-      - name: Set up CMake
-        uses: cmake/setup-cmake@v1
-        with:
-          cmake_version: 3.21
+      - name: Setup CMake
+        uses: jwlawson/actions-setup-cmake@v1.13
+
       - name: Build project
         run: cmake --build . --config Debug
 
