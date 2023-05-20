@@ -69,6 +69,6 @@ jobs:
       - name: Upload output artifact
         uses: actions/upload-artifact@v3
         with:
-          name: Program-output
+          name: program-output
           path: output.txt        
           
