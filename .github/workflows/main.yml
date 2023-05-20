@@ -53,5 +53,21 @@ jobs:
         with:
           name: coverage-report
           path: coverage-report/
-          
+  Windows:
+    runs-on: self-hosted
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Build C++ program
+        run: g++ -o output.exe main.cpp
+
+      - name: Run C++ program and save output
+        run: output.exe > output.txt
+        
+      - name: Upload result for job 2
+        uses: actions/upload-artifact@v3
+        with:
+          name: Program-output
+          path: output.txt        
           
