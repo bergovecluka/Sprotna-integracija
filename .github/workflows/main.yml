@@ -2,7 +2,7 @@ name: GitHub Actions
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 jobs:
-  Explore-GitHub-Actions:
+  Generate-coverage-report:
     runs-on: ubuntu-latest
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
@@ -53,7 +53,8 @@ jobs:
         with:
           name: coverage-report
           path: coverage-report/
-  Windows:
+          
+  Generate-release-output:
     runs-on: self-hosted
     steps:
       - name: Checkout code
@@ -64,8 +65,8 @@ jobs:
 
       - name: Run C++ program and save output
         run: output.exe > output.txt
-        
-      - name: Upload result for job 2
+
+      - name: Upload output artifact
         uses: actions/upload-artifact@v3
         with:
           name: Program-output
