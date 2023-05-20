@@ -37,6 +37,10 @@ jobs:
           cmake --build .
           ctest --output-on-failure
 
+      - name: Install lcov
+        run:
+          sudo apt-get install lcov -y
+
       - name: Generate coverage report
         run: |
           lcov --capture --directory . --output-file coverage.info
