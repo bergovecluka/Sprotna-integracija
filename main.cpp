@@ -63,7 +63,7 @@ int main() {
     int k = calculate_largest_k(p);
     std::cout << "Piva: "; 
     for(int ai : p){
-	std::cout << ai << " ,";
+	std::cout << ai << ", ";
     }
     std::cout << std::endl << "Najvecja velikost skatel, v katere jih lahko zapakiramo: " << k << ".";
 
