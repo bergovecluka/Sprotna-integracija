@@ -34,6 +34,9 @@ jobs:
       - name: Run project
         run: ./main
 
+      - name: Install lcov
+        run: sudo apt-get install lcov -y
+
       - name: Generate coverage report
         run: |
           gcov main.cpp
