@@ -21,7 +21,7 @@ jobs:
       - run: echo "🍏 This job's status is ${{ job.status }}."
       
       - name: Install CMake
-        run: jwlawson/actions-setup-cmake@v1.13
+        uses: jwlawson/actions-setup-cmake@v1.13
 
       - name: Build CMake
         run: cmake .
