@@ -26,23 +26,29 @@ jobs:
       - name: Build CMake
         run: cmake -B build -DCMAKE_BUILD_TYPE=Debug
 
-      - name: Build project
-        run: cmake --build build --config Debug
+      - name: Compile project
+        run: |
+          gcc --coverage -c -Wall -Werror main.cpp -lstdc++
+          gcc --coverage -o main main.cpp -lstdc++
+
+      - name: Run project
+        run: ./main
 
       - name: Generate coverage report
         run: |
-          gcovr -r build --exclude 'build/*CMake.*' --exclude 'build/*test.*' --exclude 'build/*external.*' --xml-pretty --output=coverage.xml
+          gcov main.cpp
           lcov --capture --directory . --output-file coverage.info
-          lcov --remove coverage.info '/usr/*' --output-file coverage.info
+          lcov --remove coverage.info "/usr/*" --output-file coverage-filtered.info
           lcov --list coverage.info
 
       - name: Generate HTML report
         run: |
-          genhtml coverage.info --output-directory coverage-report
+          genhtml coverage-filtered.info --output-directory coverage-report
 
       - name: Upload coverage artifact
         uses: actions/upload-artifact@v3
         with:
           name: coverage-report
           path: coverage-report/
-
+          
+          

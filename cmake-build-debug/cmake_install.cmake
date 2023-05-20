@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/lukab/Documents/fax/s5/PIPR/v4
+# Install script for directory: C:/Users/lukab/Documents/fax/s6/PRO/Sprotna-integracija
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/v4")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/projektna")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/lukab/Documents/fax/s5/PIPR/v4/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/lukab/Documents/fax/s6/PRO/Sprotna-integracija/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

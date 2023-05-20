@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "v4.exe"
+			"path" : "projektna.exe"
 		},
 		{
-			"path" : "v4.pdb"
+			"path" : "projektna.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -27,7 +27,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 7,
+				"line" : 6,
 				"parent" : 0
 			}
 		]
@@ -38,10 +38,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : " -std=c++11 -fopenmp -g -fdiagnostics-color=always"
-				},
-				{
-					"fragment" : "-std=gnu++14"
+					"fragment" : "-g -fdiagnostics-color=always"
 				}
 			],
 			"language" : "CXX",
@@ -51,7 +48,7 @@
 				[
 					1
 				],
-				"standard" : "14"
+				"standard" : "17"
 			},
 			"sourceIndexes" : 
 			[
@@ -59,13 +56,13 @@
 			]
 		}
 	],
-	"id" : "v4::@6890427a1f51a3e7e1df",
+	"id" : "projektna::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "-std=c++11 -fopenmp -g",
+				"fragment" : "-g",
 				"role" : "flags"
 			},
 			{
@@ -79,8 +76,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "v4",
-	"nameOnDisk" : "v4.exe",
+	"name" : "projektna",
+	"nameOnDisk" : "projektna.exe",
 	"paths" : 
 	{
 		"build" : ".",

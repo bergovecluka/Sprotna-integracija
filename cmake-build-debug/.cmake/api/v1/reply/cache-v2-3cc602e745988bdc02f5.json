@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Users/lukab/Documents/fax/s5/PIPR/v4/cmake-build-debug"
+			"value" : "c:/Users/lukab/Documents/fax/s6/PRO/Sprotna-integracija/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -575,7 +575,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/lukab/Documents/fax/s5/PIPR/v4/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "C:/Users/lukab/Documents/fax/s6/PRO/Sprotna-integracija/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -647,7 +647,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/lukab/Documents/fax/s5/PIPR/v4"
+			"value" : "C:/Users/lukab/Documents/fax/s6/PRO/Sprotna-integracija"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -659,7 +659,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "C:/Program Files (x86)/v4"
+			"value" : "C:/Program Files (x86)/projektna"
 		},
 		{
 			"name" : "CMAKE_LINKER",
@@ -875,7 +875,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "v4"
+			"value" : "projektna"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1266,7 +1266,7 @@
 			"value" : "TRUE"
 		},
 		{
-			"name" : "v4_BINARY_DIR",
+			"name" : "projektna_BINARY_DIR",
 			"properties" : 
 			[
 				{
@@ -1275,10 +1275,10 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/lukab/Documents/fax/s5/PIPR/v4/cmake-build-debug"
+			"value" : "C:/Users/lukab/Documents/fax/s6/PRO/Sprotna-integracija/cmake-build-debug"
 		},
 		{
-			"name" : "v4_IS_TOP_LEVEL",
+			"name" : "projektna_IS_TOP_LEVEL",
 			"properties" : 
 			[
 				{
@@ -1290,7 +1290,7 @@
 			"value" : "ON"
 		},
 		{
-			"name" : "v4_SOURCE_DIR",
+			"name" : "projektna_SOURCE_DIR",
 			"properties" : 
 			[
 				{
@@ -1299,7 +1299,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/lukab/Documents/fax/s5/PIPR/v4"
+			"value" : "C:/Users/lukab/Documents/fax/s6/PRO/Sprotna-integracija"
 		}
 	],
 	"kind" : "cache",
