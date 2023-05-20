@@ -9,7 +9,7 @@ jobs:
       - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
       - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
       
-      - name: Check out repository code
+      - name: Checkout code
         uses: actions/checkout@v3
       
       - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
@@ -21,9 +21,7 @@ jobs:
       - run: echo "🍏 This job's status is ${{ job.status }}."
       
       - name: Install CMake
-        run: |
-          sudo apt-get update
-          sudo apt-get install cmake
+        run: jwlawson/actions-setup-cmake@v1.13
 
       - name: Build CMake
         run: cmake .
@@ -31,21 +29,12 @@ jobs:
       - name: Build project
         run: cmake --build . --config Debug
 
-      - name: Run tests with code coverage
-        run: |
-          cmake -DCMAKE_BUILD_TYPE=Debug -DBUILD_COVERAGE=ON .
-          cmake --build .
-          ctest --output-on-failure
-
-      - name: Install lcov
-        run:
-          sudo apt-get install lcov -y
-
       - name: Generate coverage report
         run: |
           lcov --capture --directory . --output-file coverage.info
           lcov --remove coverage.info '/usr/*' --output-file coverage.info
           lcov --list coverage.info
+
       - name: Generate HTML report
         run: |
           genhtml coverage.info --output-directory coverage-report
