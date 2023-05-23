@@ -65,6 +65,7 @@ int main() {
     for(int ai : p){
 	std::cout << ai << ", ";
     }
+    
     std::cout << std::endl << "Najvecja velikost skatel, v katere jih lahko zapakiramo: " << k << ".";
 
     return 0;
